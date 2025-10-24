@@ -1,0 +1,164 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #1D3557;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
+  margin: 0;
+  color: #FFFFFF;
+  letter-spacing: 0.2rem;
+}
+
+.navbar h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5.6rem;
+  margin: 0.2rem 0 0 0;
+  color: #FFFFFF;
+  letter-spacing: 0.4rem;
+}
+
+.catalogo {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: #e6f2f7;
+}
+
+.producto {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.producto h2 {
+  padding-top: 1.5rem;
+  font-family: 'Montserrat-Bold';
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  color: #444D87;
+}
+
+.descripcion-producto {
+  font-family: 'Oswald';
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: #1b1b1b;
+  margin: 0 0 1rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
+
+.precio-producto{
+  padding: 0.5rem 0;
+  font-family: 'Montserrat-Bold';
+  font-size: 1.2rem;
+  color: #00AEEF;
+}
+
+.descripcion-producto-lanzamiento{
+  font-family: 'Montserrat-Bold';
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.footer {
+  position: relative;
+  background-color: #2E3A59;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.footer a {
+  font-family: 'Montserrat';
+  color: #23c1fa;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #ebd8d8;
+}
+
+.footer .autor {
+  position: absolute;
+  bottom: -3px;
+  left: 10px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.redes {
+  padding-top: 0.7rem;
+}
+
+.contenido-footer p {
+  margin: 0.5rem 0;
+  font-family: 'Montserrat';
+}
+
+@media (max-width: 768px) {
+  .producto {
+    width: 45%;
+  }
+
+  .navbar h2 {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
+  .navbar h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .producto {
+    width: 90%;
+  }
+  .navbar h2 {
+    font-size: 1rem;
+  }
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+}
